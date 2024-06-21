@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 15:20:35 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/21 18:06:27 by vboxuser         ###   ########.fr       */
+/*   Updated: 2024/06/21 18:39:03 by vboxuser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ public:
 	Fixed(const int number);
 	Fixed(const float number);
 	Fixed(const Fixed &rhs);
-	Fixed	&operator=(const Fixed &rhs);
+	Fixed	&operator=(const Fixed &rhs) const;
 	bool	operator>(const Fixed &rhs) const;
 	bool	operator<(const Fixed &rhs) const;
 	bool	operator>=(const Fixed &rhs) const;

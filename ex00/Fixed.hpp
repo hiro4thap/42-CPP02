@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 15:20:35 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/19 16:39:11 by hiono            ###   ########.fr       */
+/*   Updated: 2024/06/21 18:38:30 by vboxuser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Fixed
 public:
 	Fixed();
 	Fixed(const Fixed &rhs);
-	Fixed& operator=(const Fixed &rhs);
+	Fixed& operator=(const Fixed &rhs) const;
 	~Fixed();
 	int		getRawBits(void) const;
 	void	setRawBits(int const raw);

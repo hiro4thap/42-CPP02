@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 15:20:30 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/20 16:40:46 by hiono            ###   ########.fr       */
+/*   Updated: 2024/06/21 18:38:41 by vboxuser         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ Fixed::Fixed(const Fixed &rhs)
 	_fixed_point_value = rhs.getRawBits();
 }
 
-Fixed&	Fixed::operator=(const Fixed &rhs)
+Fixed&	Fixed::operator=(const Fixed &rhs) const
 {
 	std::cout << "Copy assignment operator called" << "\n";
 	if (this != &rhs)
