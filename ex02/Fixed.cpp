@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 15:20:30 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/21 18:38:55 by vboxuser         ###   ########.fr       */
+/*   Updated: 2024/06/22 14:58:54 by dev              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ Fixed::Fixed(const Fixed &rhs)
 	_fixed_point_value = rhs.getRawBits();
 }
 
-Fixed&	Fixed::operator=(const Fixed &rhs) const
+Fixed&	Fixed::operator=(const Fixed &rhs)
 {
 	if (this != &rhs)
 		_fixed_point_value = rhs.getRawBits();

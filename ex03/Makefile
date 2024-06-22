@@ -5,16 +5,15 @@ CFLAGS		= -Wall -Wextra -Werror -std=c++98 -MMD
 
 SRC_DIR 	= ./
 OBJ_DIR 	= obj/
-INC_DIR 	= ./
 
 SRC			= main.cpp \
-			  Fixed.cpp
-INC			= Fixed.hpp
+			  Fixed.cpp \
+			  Point.cpp \
+			  bsp.cpp
 OBJ			= $(SRC:.cpp=.o)
 
 SRCS		= $(addprefix $(SRC_DIR), $(SRC))
 OBJS		= $(addprefix $(OBJ_DIR), $(OBJ))
-INCS		= $(addprefix $(INC_DIR), $(INC))
 DEPS		= $(OBJS:.o=.d)
 
 all:$(NAME)

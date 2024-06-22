@@ -6,7 +6,7 @@
 /*   By: vboxuser <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 18:22:32 by vboxuser          #+#    #+#             */
-/*   Updated: 2024/06/21 20:00:50 by vboxuser         ###   ########.fr       */
+/*   Updated: 2024/06/22 16:57:31 by dev              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ public:
 	~Point();
 	Fixed	getX() const;
 	Fixed	getY() const;
-	static Fixed	area(const Point a, const Point b, const Point c);
 
 private:
 	const Fixed	_x;

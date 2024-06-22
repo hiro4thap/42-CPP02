@@ -6,7 +6,7 @@
 /*   By: hiono <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 15:20:35 by hiono             #+#    #+#             */
-/*   Updated: 2024/06/21 18:38:47 by vboxuser         ###   ########.fr       */
+/*   Updated: 2024/06/22 17:07:10 by dev              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ public:
 	Fixed(const int number);
 	Fixed(const float number);
 	Fixed(const Fixed &rhs);
-	Fixed& operator=(const Fixed &rhs) const;
+	Fixed& operator=(const Fixed &rhs);
 	~Fixed();
 	int		getRawBits(void) const;
 	void	setRawBits(int const raw);
